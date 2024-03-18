@@ -1,6 +1,9 @@
 package net.benjaydev.childhoodimagination;
 
 import com.mojang.logging.LogUtils;
+import net.benjaydev.childhoodimagination.block.ModBlocks;
+import net.benjaydev.childhoodimagination.item.ModCreativeModeTabs;
+import net.benjaydev.childhoodimagination.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +28,10 @@ public class ChildhoodImaginationMod
     public ChildhoodImaginationMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
