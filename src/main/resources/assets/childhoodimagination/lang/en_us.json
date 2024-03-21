@@ -1,8 +1,18 @@
 {
   "item.childhoodimagination.scrue": "Scrue",
+  "item.childhoodimagination.scrue_chunk": "Scrue Chunk",
   "item.childhoodimagination.scrue_stick": "Scrue Coated Stick",
 
   "block.childhoodimagination.scrue_ore": "Scrue Ore",
+
+  "block.childhoodimagination.scrue_pickaxe": "Scrue Pickaxe",
+  "block.childhoodimagination.scrue_sword": "Scrue Pickaxe",
+  "block.childhoodimagination.scrue_axe": "Scrue Pickaxe",
+  "block.childhoodimagination.scrue_shovel": "Scrue Pickaxe",
+  "block.childhoodimagination.scrue_hoe": "Scrue Pickaxe",
+
+
+
 
   "creativetab.childhoodimagination.customtab": "Childhood Imagination"
 }
