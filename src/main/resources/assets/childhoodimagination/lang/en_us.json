@@ -3,16 +3,20 @@
   "item.childhoodimagination.scrue_chunk": "Scrue Chunk",
   "item.childhoodimagination.scrue_stick": "Scrue Coated Stick",
 
+  "item.childhoodimagination.scrue_pickaxe": "Scrue Pickaxe",
+  "item.childhoodimagination.scrue_sword": "Scrue Sword",
+  "item.childhoodimagination.scrue_axe": "Scrue Axe",
+  "item.childhoodimagination.scrue_shovel": "Scrue Shovel",
+  "item.childhoodimagination.scrue_hoe": "Scrue Hoe",
+
   "block.childhoodimagination.scrue_ore": "Scrue Ore",
 
-  "block.childhoodimagination.scrue_pickaxe": "Scrue Pickaxe",
-  "block.childhoodimagination.scrue_sword": "Scrue Pickaxe",
-  "block.childhoodimagination.scrue_axe": "Scrue Pickaxe",
-  "block.childhoodimagination.scrue_shovel": "Scrue Pickaxe",
-  "block.childhoodimagination.scrue_hoe": "Scrue Pickaxe",
 
+  "block.childhoodimagination.easter_dungeon_bedrock": "Easter Dungeon Bedrock",
+  "item.childhoodimagination.easter_dungeon_key": "Easter Dungeon Key",
+  "item.childhoodimagination.easter_gem": "Easter Gem",
 
-
+  "block.childhoodimagination.easter_gem_ore": "Easter Gem Ore",
 
   "creativetab.childhoodimagination.customtab": "Childhood Imagination"
 }

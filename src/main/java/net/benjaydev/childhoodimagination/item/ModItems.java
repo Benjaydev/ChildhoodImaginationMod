@@ -1,6 +1,7 @@
 package net.benjaydev.childhoodimagination.item;
 
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
+import net.benjaydev.childhoodimagination.item.custom.EasterDungeonKeyItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,6 +22,10 @@ public class ModItems {
     public static final RegistryObject<Item> SCRUE_SWORD = ITEMS.register("scrue_sword", () -> new SwordItem(ModToolTiers.SCRUE, 4, 2, new Item.Properties()));
     public static final RegistryObject<Item> SCRUE_SHOVEL = ITEMS.register("scrue_shovel", () -> new ShovelItem(ModToolTiers.SCRUE, 0, 0,new Item.Properties()));
     public static final RegistryObject<Item> SCRUE_HOE = ITEMS.register("scrue_hoe", () -> new HoeItem(ModToolTiers.SCRUE, 0, 0,new Item.Properties()));
+
+
+    public static final RegistryObject<Item> EASTER_DUNGEON_KEY = ITEMS.register("easter_dungeon_key", () -> new EasterDungeonKeyItem(new Item.Properties().durability(1)));
+    public static final RegistryObject<Item> EASTER_GEM = ITEMS.register("easter_gem", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

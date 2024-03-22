@@ -23,6 +23,15 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
                     UniformInt.of(3, 6)));
 
+    public static final RegistryObject<Block> EASTER_DUNGEON_BEDROCK = registerBlock("easter_dungeon_bedrock",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+
+    public static final RegistryObject<Block> EASTER_GEM_ORE = registerBlock("easter_gem_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+                    UniformInt.of(6, 12)));
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

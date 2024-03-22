@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "childhoodimagination:scrue_stick"
+    },
+    "X": {
+      "item": "childhoodimagination:scrue"
+    }
+  },
+  "pattern": [
+    "XX ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "childhoodimagination:scrue_hoe"
+  },
+  "show_notification": true
+}
