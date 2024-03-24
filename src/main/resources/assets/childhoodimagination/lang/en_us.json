@@ -18,5 +18,16 @@
 
   "block.childhoodimagination.easter_gem_ore": "Easter Gem Ore",
 
+  "item.childhoodimagination.blue_easter_egg": "Blue Easter Egg",
+  "item.childhoodimagination.red_easter_egg": "Red Easter Egg",
+  "item.childhoodimagination.orange_easter_egg": "Orange Easter Egg",
+  "item.childhoodimagination.purple_easter_egg": "Purple Easter Egg",
+  "item.childhoodimagination.brown_easter_egg": "Brown Easter Egg",
+  "item.childhoodimagination.yellow_easter_egg": "Yellow Easter Egg",
+  "item.childhoodimagination.green_easter_egg": "Green Easter Egg",
+  "item.childhoodimagination.grey_easter_egg": "Gray Easter Egg",
+  "item.childhoodimagination.fire_easter_egg": "Fire Easter Egg",
+  "item.childhoodimagination.void_easter_egg": "Void Easter Egg",
+
   "creativetab.childhoodimagination.customtab": "Childhood Imagination"
 }

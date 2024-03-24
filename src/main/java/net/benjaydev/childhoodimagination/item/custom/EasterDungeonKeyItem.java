@@ -23,29 +23,19 @@ public class EasterDungeonKeyItem extends Item {
     public InteractionResult useOn(UseOnContext pContext) {
         Level level = pContext.getLevel();
         if(!level.isClientSide()){
+            BlockPos positionClicked = pContext.getClickedPos();
 
-            for(int x = -1; x < 1; x++){
-                for(int y = -1; y < 1; y++){
-                    for(int z = -1; z < 1; z++){
-                        BlockPos positionClicked = pContext.getClickedPos().offset(x,y,z);
-
-                        BlockState blockState = level.getBlockState(positionClicked);
-                        Block block = blockState.getBlock();
-
-
-                        // If is the dungeon block, destroy
-                        if(blockState.is(ModBlocks.EASTER_DUNGEON_BEDROCK.get())){
-                            level.destroyBlock(positionClicked, false);
-                            level.updateNeighborsAt(positionClicked, block);
+            BlockState blockState = level.getBlockState(positionClicked);
+            Block block = blockState.getBlock();
+            
+            // If is the dungeon block, destroy
+            if(blockState.is(ModBlocks.EASTER_DUNGEON_BEDROCK.get())){
+                level.destroyBlock(positionClicked, false);
+                level.updateNeighborsAt(positionClicked, block);
 
 
-                            pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), player -> player.broadcastBreakEvent(player.getUsedItemHand()));
-                        }
-                    }
-                }
+                pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), player -> player.broadcastBreakEvent(player.getUsedItemHand()));
             }
-
-
         }
 
 
