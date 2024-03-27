@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "childhoodimagination:scrue_stick"
+    },
+    "S": {
+      "item": "childhoodimagination:scrue"
+    }
+  },
+  "pattern": [
+    " S ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "childhoodimagination:scrue_shovel"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "childhoodimagination:scrue_stick"
+    },
+    "G": {
+      "item": "childhoodimagination:easter_gem"
+    }
+  },
+  "pattern": [
+    " G ",
+    " # ",
+    "   "
+  ],
+  "result": {
+    "item": "childhoodimagination:easter_dungeon_key"
+  },
+  "show_notification": true
+}

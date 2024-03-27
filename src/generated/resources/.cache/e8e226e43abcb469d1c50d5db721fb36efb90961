@@ -1,0 +1,4 @@
+// 1.20.2	2024-03-27T17:17:36.0691546	Tags for minecraft:block mod id childhoodimagination
+c01b3804342fac847db7e021f16cd45db1a34d7a data/childhoodimagination/tags/blocks/needs_scrue_tool.json
+7ea0241222622013fca23b3e2f42b50e16643257 data/minecraft/tags/blocks/mineable/pickaxe.json
+099d211b2854dc320654445d92cd44660eac2c96 data/minecraft/tags/blocks/needs_diamond_tool.json

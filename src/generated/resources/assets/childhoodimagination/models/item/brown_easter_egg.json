@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "childhoodimagination:item/brown_easter_egg"
+  }
+}

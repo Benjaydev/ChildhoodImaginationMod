@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_easter_gem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "childhoodimagination:easter_gem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "childhoodimagination:easter_dungeon_key"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_easter_gem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "childhoodimagination:easter_dungeon_key"
+    ]
+  },
+  "sends_telemetry_event": false
+}

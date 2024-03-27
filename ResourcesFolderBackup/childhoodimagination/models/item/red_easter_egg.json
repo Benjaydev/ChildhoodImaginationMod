@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "childhoodimagination:item/red_easter_egg"
+  }
+}

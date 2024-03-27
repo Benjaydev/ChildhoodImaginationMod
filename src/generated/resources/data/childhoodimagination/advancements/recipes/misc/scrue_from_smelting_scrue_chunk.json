@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scrue_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "childhoodimagination:scrue_chunk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "childhoodimagination:scrue_from_smelting_scrue_chunk"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scrue_chunk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "childhoodimagination:scrue_from_smelting_scrue_chunk"
+    ]
+  },
+  "sends_telemetry_event": false
+}
