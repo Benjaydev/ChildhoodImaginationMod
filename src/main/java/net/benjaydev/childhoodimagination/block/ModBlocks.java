@@ -24,7 +24,7 @@ public class ModBlocks {
                     UniformInt.of(3, 6)));
 
     public static final RegistryObject<Block> EASTER_DUNGEON_BEDROCK = registerBlock("easter_dungeon_bedrock",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).noLootTable()));
 
     public static final RegistryObject<Block> EASTER_GEM_ORE = registerBlock("easter_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),

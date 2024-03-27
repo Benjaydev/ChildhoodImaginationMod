@@ -16,5 +16,5 @@ public class ModToolTiers {
     public static final Tier SCRUE = TierSortingRegistry.registerTier(
             new ForgeTier(3, 100, 7f, 4f, 25,
                     ModTags.Blocks.NEEDS_SCRUE_TOOL, () -> Ingredient.of(ModItems.SCRUE.get())),
-                    new ResourceLocation(ChildhoodImaginationMod.MODID, "scrue"), List.of(Tiers.DIAMOND), List.of(Tiers.NETHERITE));
+                    new ResourceLocation(ChildhoodImaginationMod.MODID, "scrue"), List.of(Tiers.NETHERITE), List.of());
 }
