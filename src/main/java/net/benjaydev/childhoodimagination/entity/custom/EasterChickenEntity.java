@@ -62,7 +62,7 @@ public class EasterChickenEntity extends Animal {
     public int eggTime;
     public boolean isChickenJockey;
 
-    public EasterChickenEntity(EntityType<? extends EasterChickenEntity> pEntityType, Level pLevel, RegistryObject<Item> egg_drop) {
+    public EasterChickenEntity(EntityType<? extends EasterChickenEntity> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.eggTime = this.random.nextInt(6000) + 6000;
         this.setPathfindingMalus(BlockPathTypes.WATER, 0.0F);
