@@ -2,8 +2,11 @@ package net.benjaydev.childhoodimagination;
 
 import com.mojang.logging.LogUtils;
 import net.benjaydev.childhoodimagination.block.ModBlocks;
+import net.benjaydev.childhoodimagination.entity.ModEntities;
+import net.benjaydev.childhoodimagination.entity.client.EasterChickenRenderer;
 import net.benjaydev.childhoodimagination.item.ModCreativeModeTabs;
 import net.benjaydev.childhoodimagination.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,6 +35,7 @@ public class ChildhoodImaginationMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -65,6 +69,7 @@ public class ChildhoodImaginationMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(ModEntities.EASTER_CHICKEN.get(), EasterChickenRenderer::new);
         }
     }
 }

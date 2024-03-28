@@ -23,6 +23,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.EASTER_GEM_ORE.get(),
                 block -> createOreDrop(ModBlocks.EASTER_GEM_ORE.get(), ModItems.EASTER_GEM.get()));
+
     }
 
     @Override

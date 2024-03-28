@@ -7,7 +7,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
@@ -18,8 +21,16 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SCRUE_ORE_PLACED_KEY = registerKey("scrue_ore_placed");
     public static final ResourceKey<PlacedFeature> EASTER_GEM_ORE_PLACED_KEY = registerKey("easter_gem_ore_placed");
 
-    public static void boostrap(BootstapContext<PlacedFeature> context){
+    public static void bootstrap(BootstapContext<PlacedFeature> context){
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+
+        register(context, SCRUE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SCRUE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(2,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(30))));
+
+        register(context, EASTER_GEM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_EASTER_GEM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(2,
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(40))));
     }
 
     public static ResourceKey<PlacedFeature> registerKey(String name){

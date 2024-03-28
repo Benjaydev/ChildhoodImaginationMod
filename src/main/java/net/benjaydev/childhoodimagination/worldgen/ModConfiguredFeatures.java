@@ -24,6 +24,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_EASTER_GEM_ORE_KEY = registerKey("easter_gem_ore");
 
 
+
     public static void boostrap(BootstapContext<ConfiguredFeature<?, ?>> context){
         RuleTest stoneReplacable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
 
@@ -34,7 +35,7 @@ public class ModConfiguredFeatures {
                 ModBlocks.EASTER_GEM_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_SCRUE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldScrueOres, 4));
-        register(context, OVERWORLD_EASTER_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldEasterGemOres, 1));
+        register(context, OVERWORLD_EASTER_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldEasterGemOres, 3));
 
     }
 
