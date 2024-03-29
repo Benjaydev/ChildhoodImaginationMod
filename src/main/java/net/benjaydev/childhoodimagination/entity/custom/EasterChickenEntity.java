@@ -7,10 +7,12 @@ package net.benjaydev.childhoodimagination.entity.custom;
 
 import javax.annotation.Nullable;
 
+import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
 import net.benjaydev.childhoodimagination.entity.ModEntities;
 import net.benjaydev.childhoodimagination.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -51,7 +53,6 @@ import org.joml.Vector3f;
 
 public class EasterChickenEntity extends Animal {
 
-    public static RegistryObject<Item> EGG_DROP = ModItems.BLUE_EASTER_EGG;
     private static final Ingredient FOOD_ITEMS;
     public float flap;
     public float flapSpeed;
@@ -62,10 +63,16 @@ public class EasterChickenEntity extends Animal {
     public int eggTime;
     public boolean isChickenJockey;
 
+
     public EasterChickenEntity(EntityType<? extends EasterChickenEntity> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.eggTime = this.random.nextInt(6000) + 6000;
         this.setPathfindingMalus(BlockPathTypes.WATER, 0.0F);
+    }
+
+
+    public RegistryObject<Item> GetEggDrop(){
+        return ModItems.BLUE_EASTER_EGG;
     }
 
 
@@ -107,11 +114,10 @@ public class EasterChickenEntity extends Animal {
         this.flap += this.flapping * 2.0F;
         if (!this.level().isClientSide && this.isAlive() && !this.isBaby() && !this.isChickenJockey() && --this.eggTime <= 0) {
             this.playSound(SoundEvents.CHICKEN_EGG, 1.0F, (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
-            this.spawnAtLocation(EGG_DROP.get());
+            this.spawnAtLocation(GetEggDrop().get());
             this.gameEvent(GameEvent.ENTITY_PLACE);
             this.eggTime = this.random.nextInt(6000) + 6000;
         }
-
     }
 
     protected boolean isFlapping() {
@@ -140,7 +146,7 @@ public class EasterChickenEntity extends Animal {
 
     @Nullable
     public EasterChickenEntity getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
-        return ModEntities.EASTER_CHICKEN.get().create(pLevel);
+        return null;
     }
 
     public boolean isFood(ItemStack pStack) {

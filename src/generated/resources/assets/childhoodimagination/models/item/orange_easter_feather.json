@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "childhoodimagination:item/orange_easter_feather"
+  }
+}

@@ -11,6 +11,15 @@ import net.minecraftforge.fml.common.Mod;
 public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event){
-        event.put(ModEntities.EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.BLUE_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.RED_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.ORANGE_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.PURPLE_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.BROWN_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.YELLOW_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.GREEN_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.GRAY_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.FIRE_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
+        event.put(ModEntities.VOID_EASTER_CHICKEN.get(), EasterChickenEntity.createAttributes().build());
     }
 }

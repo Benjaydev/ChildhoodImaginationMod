@@ -3,7 +3,9 @@ package net.benjaydev.childhoodimagination;
 import com.mojang.logging.LogUtils;
 import net.benjaydev.childhoodimagination.block.ModBlocks;
 import net.benjaydev.childhoodimagination.entity.ModEntities;
-import net.benjaydev.childhoodimagination.entity.client.EasterChickenRenderer;
+import net.benjaydev.childhoodimagination.entity.client.*;
+import net.benjaydev.childhoodimagination.entity.custom.BlueEasterChickenEntity;
+import net.benjaydev.childhoodimagination.entity.custom.YellowEasterChickenEntity;
 import net.benjaydev.childhoodimagination.item.ModCreativeModeTabs;
 import net.benjaydev.childhoodimagination.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -69,7 +71,16 @@ public class ChildhoodImaginationMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            EntityRenderers.register(ModEntities.EASTER_CHICKEN.get(), EasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.BLUE_EASTER_CHICKEN.get(), BlueEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.RED_EASTER_CHICKEN.get(), RedEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.ORANGE_EASTER_CHICKEN.get(), OrangeEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.PURPLE_EASTER_CHICKEN.get(), PurpleEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.BROWN_EASTER_CHICKEN.get(), BrownEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.YELLOW_EASTER_CHICKEN.get(), YellowEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.GREEN_EASTER_CHICKEN.get(), GreenEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.GRAY_EASTER_CHICKEN.get(), GrayEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.VOID_EASTER_CHICKEN.get(), VoidEasterChickenRenderer::new);
+            EntityRenderers.register(ModEntities.FIRE_EASTER_CHICKEN.get(), FireEasterChickenRenderer::new);
         }
     }
 }

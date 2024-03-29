@@ -12,15 +12,13 @@ import net.minecraft.world.entity.animal.Chicken;
 
 public class EasterChickenRenderer extends MobRenderer<EasterChickenEntity, ChickenModel<EasterChickenEntity>> {
 
-    private static final ResourceLocation CHICKEN_LOCATION = new ResourceLocation(ChildhoodImaginationMod.MODID, "textures/entity/blue_easter_chicken.png");
-
     public EasterChickenRenderer(EntityRendererProvider.Context pContext) {
         super(pContext, new ChickenModel(pContext.bakeLayer(ModelLayers.CHICKEN)), 0.3F);
     }
 
     @Override
     public ResourceLocation getTextureLocation(EasterChickenEntity easterChickenEntity) {
-        return CHICKEN_LOCATION;
+        return new ResourceLocation(ChildhoodImaginationMod.MODID, "textures/entity/blue_easter_chicken.png");
     }
 
     protected float getBob(Chicken pLivingBase, float pPartialTicks) {

@@ -42,6 +42,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.VOID_EASTER_EGG);
         simpleItem(ModItems.FIRE_EASTER_EGG);
 
+        simpleItem(ModItems.BLUE_EASTER_FEATHER);
+        simpleItem(ModItems.BROWN_EASTER_FEATHER);
+        simpleItem(ModItems.GREEN_EASTER_FEATHER);
+        simpleItem(ModItems.GRAY_EASTER_FEATHER);
+        simpleItem(ModItems.ORANGE_EASTER_FEATHER);
+        simpleItem(ModItems.RED_EASTER_FEATHER);
+        simpleItem(ModItems.PURPLE_EASTER_FEATHER);
+        simpleItem(ModItems.YELLOW_EASTER_FEATHER);
+        simpleItem(ModItems.VOID_EASTER_FEATHER);
+        simpleItem(ModItems.FIRE_EASTER_FEATHER);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
