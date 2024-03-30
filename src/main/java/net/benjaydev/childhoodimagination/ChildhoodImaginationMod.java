@@ -8,6 +8,8 @@ import net.benjaydev.childhoodimagination.entity.custom.BlueEasterChickenEntity;
 import net.benjaydev.childhoodimagination.entity.custom.YellowEasterChickenEntity;
 import net.benjaydev.childhoodimagination.item.ModCreativeModeTabs;
 import net.benjaydev.childhoodimagination.item.ModItems;
+import net.benjaydev.childhoodimagination.worldgen.biome.ModTerrablender;
+import net.benjaydev.childhoodimagination.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +22,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ChildhoodImaginationMod.MODID)
@@ -39,6 +42,8 @@ public class ChildhoodImaginationMod
         ModCreativeModeTabs.register(modEventBus);
         ModEntities.register(modEventBus);
 
+        ModTerrablender.registerBiomes();
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -51,6 +56,9 @@ public class ChildhoodImaginationMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(() -> {
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
+        });
     }
 
     // Add the example block item to the building blocks tab

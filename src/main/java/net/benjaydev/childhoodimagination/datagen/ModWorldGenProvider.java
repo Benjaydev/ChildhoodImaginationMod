@@ -4,6 +4,8 @@ import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
 import net.benjaydev.childhoodimagination.worldgen.ModBiomeModifiers;
 import net.benjaydev.childhoodimagination.worldgen.ModConfiguredFeatures;
 import net.benjaydev.childhoodimagination.worldgen.ModPlacedFeatures;
+import net.benjaydev.childhoodimagination.worldgen.biome.ModBiomes;
+import net.benjaydev.childhoodimagination.worldgen.dimension.ModDimensions;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -16,9 +18,12 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
+            .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.BIOME, ModBiomes::bootstrap)
+            .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(ChildhoodImaginationMod.MODID));

@@ -1,6 +1,7 @@
 package net.benjaydev.childhoodimagination.block;
 
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
+import net.benjaydev.childhoodimagination.block.custom.ModPortalBlock;
 import net.benjaydev.childhoodimagination.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -26,11 +27,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> EASTER_DUNGEON_BEDROCK = registerBlock("easter_dungeon_bedrock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).noLootTable()));
 
+
     public static final RegistryObject<Block> EASTER_GEM_ORE = registerBlock("easter_gem_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
                     UniformInt.of(6, 12)));
 
-
+    public static final RegistryObject<Block> EASTER_PORTAL = registerBlock("easter_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable().noOcclusion().noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

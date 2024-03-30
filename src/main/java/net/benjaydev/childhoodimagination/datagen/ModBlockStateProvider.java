@@ -18,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.EASTER_DUNGEON_BEDROCK);
         blockWithItem(ModBlocks.EASTER_GEM_ORE);
         blockWithItem(ModBlocks.SCRUE_ORE);
+        blockWithItem(ModBlocks.EASTER_PORTAL);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
