@@ -3,6 +3,7 @@ package net.benjaydev.childhoodimagination.datagen;
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
 import net.benjaydev.childhoodimagination.block.ModBlocks;
 import net.benjaydev.childhoodimagination.item.ModItems;
+import net.benjaydev.childhoodimagination.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -35,6 +36,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.STICK)
                 .unlockedBy(getHasName(ModItems.SCRUE.get()), has(ModItems.SCRUE.get()))
                 .save(recipeOutput);
+
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SCRUE_SWORD.get())
                 .pattern(" S ")
@@ -87,6 +90,152 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
 
+        // Easter
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.BLUE_EASTER_EGG.get())
+                .requires(ModItems.BLUE_EASTER_EGG.get())
+                .requires(ModItems.BLUE_EASTER_EGG.get())
+                .requires(ModItems.BLUE_EASTER_EGG.get())
+                .requires(ModItems.BLUE_EASTER_FEATHER.get())
+                .requires(ModItems.BLUE_EASTER_FEATHER.get())
+                .requires(ModItems.BLUE_EASTER_FEATHER.get())
+                .requires(ModItems.BLUE_EASTER_FEATHER.get())
+                .requires(ModItems.BLUE_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.BLUE_EASTER_EGG.get()), has(ModItems.BLUE_EASTER_EGG.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.RED_EASTER_EGG.get())
+                .requires(ModItems.RED_EASTER_EGG.get())
+                .requires(ModItems.RED_EASTER_EGG.get())
+                .requires(ModItems.RED_EASTER_EGG.get())
+                .requires(ModItems.RED_EASTER_FEATHER.get())
+                .requires(ModItems.RED_EASTER_FEATHER.get())
+                .requires(ModItems.RED_EASTER_FEATHER.get())
+                .requires(ModItems.RED_EASTER_FEATHER.get())
+                .requires(ModItems.RED_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.RED_EASTER_EGG.get()), has(ModItems.RED_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ORANGE_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.ORANGE_EASTER_EGG.get())
+                .requires(ModItems.ORANGE_EASTER_EGG.get())
+                .requires(ModItems.ORANGE_EASTER_EGG.get())
+                .requires(ModItems.ORANGE_EASTER_EGG.get())
+                .requires(ModItems.ORANGE_EASTER_FEATHER.get())
+                .requires(ModItems.ORANGE_EASTER_FEATHER.get())
+                .requires(ModItems.ORANGE_EASTER_FEATHER.get())
+                .requires(ModItems.ORANGE_EASTER_FEATHER.get())
+                .requires(ModItems.ORANGE_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.ORANGE_EASTER_EGG.get()), has(ModItems.ORANGE_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.PURPLE_EASTER_EGG.get())
+                .requires(ModItems.PURPLE_EASTER_EGG.get())
+                .requires(ModItems.PURPLE_EASTER_EGG.get())
+                .requires(ModItems.PURPLE_EASTER_EGG.get())
+                .requires(ModItems.PURPLE_EASTER_FEATHER.get())
+                .requires(ModItems.PURPLE_EASTER_FEATHER.get())
+                .requires(ModItems.PURPLE_EASTER_FEATHER.get())
+                .requires(ModItems.PURPLE_EASTER_FEATHER.get())
+                .requires(ModItems.PURPLE_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.PURPLE_EASTER_EGG.get()), has(ModItems.PURPLE_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BROWN_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.BROWN_EASTER_EGG.get())
+                .requires(ModItems.BROWN_EASTER_EGG.get())
+                .requires(ModItems.BROWN_EASTER_EGG.get())
+                .requires(ModItems.BROWN_EASTER_EGG.get())
+                .requires(ModItems.BROWN_EASTER_FEATHER.get())
+                .requires(ModItems.BROWN_EASTER_FEATHER.get())
+                .requires(ModItems.BROWN_EASTER_FEATHER.get())
+                .requires(ModItems.BROWN_EASTER_FEATHER.get())
+                .requires(ModItems.BROWN_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.BROWN_EASTER_EGG.get()), has(ModItems.BROWN_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YELLOW_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.YELLOW_EASTER_EGG.get())
+                .requires(ModItems.YELLOW_EASTER_EGG.get())
+                .requires(ModItems.YELLOW_EASTER_EGG.get())
+                .requires(ModItems.YELLOW_EASTER_EGG.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.YELLOW_EASTER_EGG.get()), has(ModItems.YELLOW_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.GREEN_EASTER_EGG.get())
+                .requires(ModItems.GREEN_EASTER_EGG.get())
+                .requires(ModItems.GREEN_EASTER_EGG.get())
+                .requires(ModItems.GREEN_EASTER_EGG.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .requires(ModItems.GREEN_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.GREEN_EASTER_EGG.get()), has(ModItems.GREEN_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GRAY_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.GRAY_EASTER_EGG.get())
+                .requires(ModItems.GRAY_EASTER_EGG.get())
+                .requires(ModItems.GRAY_EASTER_EGG.get())
+                .requires(ModItems.GRAY_EASTER_EGG.get())
+                .requires(ModItems.GRAY_EASTER_FEATHER.get())
+                .requires(ModItems.GRAY_EASTER_FEATHER.get())
+                .requires(ModItems.GRAY_EASTER_FEATHER.get())
+                .requires(ModItems.GRAY_EASTER_FEATHER.get())
+                .requires(ModItems.GRAY_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.GRAY_EASTER_EGG.get()), has(ModItems.GRAY_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.FIRE_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.FIRE_EASTER_EGG.get())
+                .requires(ModItems.FIRE_EASTER_EGG.get())
+                .requires(ModItems.FIRE_EASTER_EGG.get())
+                .requires(ModItems.FIRE_EASTER_EGG.get())
+                .requires(ModItems.FIRE_EASTER_FEATHER.get())
+                .requires(ModItems.FIRE_EASTER_FEATHER.get())
+                .requires(ModItems.FIRE_EASTER_FEATHER.get())
+                .requires(ModItems.FIRE_EASTER_FEATHER.get())
+                .requires(ModItems.FIRE_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.FIRE_EASTER_EGG.get()), has(ModItems.FIRE_EASTER_EGG.get()))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VOID_COMPRESSED_EASTER_BLOCK.get(), 1)
+                .requires(ModItems.VOID_EASTER_EGG.get())
+                .requires(ModItems.VOID_EASTER_EGG.get())
+                .requires(ModItems.VOID_EASTER_EGG.get())
+                .requires(ModItems.VOID_EASTER_EGG.get())
+                .requires(ModItems.VOID_EASTER_FEATHER.get())
+                .requires(ModItems.VOID_EASTER_FEATHER.get())
+                .requires(ModItems.VOID_EASTER_FEATHER.get())
+                .requires(ModItems.VOID_EASTER_FEATHER.get())
+                .requires(ModItems.VOID_EASTER_FEATHER.get())
+                .unlockedBy(getHasName(ModItems.VOID_EASTER_EGG.get()), has(ModItems.VOID_EASTER_EGG.get()))
+                .save(recipeOutput);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EASTER_PORTAL.get(), 1)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .requires(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.RED_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.ORANGE_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.PURPLE_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.BROWN_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.YELLOW_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.GREEN_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.GRAY_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.FIRE_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .unlockedBy(getHasName(ModBlocks.VOID_COMPRESSED_EASTER_BLOCK.get()), has(ModTags.Items.COMPRESSED_EASTER_BLOCK))
+                .save(recipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {

@@ -16,22 +16,22 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class ModPortalBlock extends Block {
-    public ModPortalBlock(Properties pProperties) {
+public class EasterPortalBlock extends Block {
+    public EasterPortalBlock(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (pPlayer.canChangeDimensions()) {
-            handleKaupenPortal(pPlayer, pPos);
+            handlePortal(pPlayer, pPos);
             return InteractionResult.SUCCESS;
         } else {
             return InteractionResult.CONSUME;
         }
     }
 
-    private void handleKaupenPortal(Entity player, BlockPos pPos) {
+    private void handlePortal(Entity player, BlockPos pPos) {
         if (player.level() instanceof ServerLevel serverlevel) {
             MinecraftServer minecraftserver = serverlevel.getServer();
             ResourceKey<Level> resourcekey = player.level().dimension() == ModDimensions.EASTER_LAND_LEVEL_KEY ?

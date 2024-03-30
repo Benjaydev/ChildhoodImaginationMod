@@ -40,8 +40,22 @@
   "item.childhoodimagination.fire_easter_feather": "Fire Easter Feather",
   "item.childhoodimagination.void_easter_feather": "Void Easter Feather",
 
+  "item.childhoodimagination.blue_easter_helmet": "Blue Easter Helmet",
+  "item.childhoodimagination.blue_easter_chestplate": "Blue Easter Chestplate",
+  "item.childhoodimagination.blue_easter_leggings": "Blue Easter Leggings",
+  "item.childhoodimagination.blue_easter_boots": "Blue Easter Boots",
 
-  "item.childhoodimagination.easter_portal": "Easter Dimension Portal",
+  "block.childhoodimagination.easter_portal": "Easter Dimension Portal",
+  "block.childhoodimagination.blue_compressed_easter_block": "Blue Compressed Easter Block",
+  "block.childhoodimagination.red_compressed_easter_block": "Red Compressed Easter Block",
+  "block.childhoodimagination.orange_compressed_easter_block": "Orange Compressed Easter Block",
+  "block.childhoodimagination.purple_compressed_easter_block": "Purple Compressed Easter Block",
+  "block.childhoodimagination.brown_compressed_easter_block": "Brown Compressed Easter Block",
+  "block.childhoodimagination.yellow_compressed_easter_block": "Yellow Compressed Easter Block",
+  "block.childhoodimagination.green_compressed_easter_block": "Green Compressed Easter Block",
+  "block.childhoodimagination.gray_compressed_easter_block": "Gray Compressed Easter Block",
+  "block.childhoodimagination.fire_compressed_easter_block": "Fire Compressed Easter Block",
+  "block.childhoodimagination.void_compressed_easter_block": "Void Compressed Easter Block",
 
 
 

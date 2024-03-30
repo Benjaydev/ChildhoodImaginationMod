@@ -67,7 +67,7 @@ public class ModDimensions {
                                 Pair.of(
                                         Climate.parameters(-0.1f, -0.1f, 0.0F, 0.7F, 0.0F, 0.1F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.EASTER_VOID_BIOME)),
                                 Pair.of(
-                                        Climate.parameters(0.5F, 0.5F, 0.5F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.EASTER_FIRE_BIOME))
+                                        Climate.parameters(0.4F, 0.4F, 0.4F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.EASTER_FIRE_BIOME))
 
                         ))),
                 noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));

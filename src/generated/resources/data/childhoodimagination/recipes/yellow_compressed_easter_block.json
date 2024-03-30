@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "childhoodimagination:yellow_easter_egg"
+    },
+    {
+      "item": "childhoodimagination:yellow_easter_egg"
+    },
+    {
+      "item": "childhoodimagination:yellow_easter_egg"
+    },
+    {
+      "item": "childhoodimagination:yellow_easter_egg"
+    },
+    {
+      "item": "childhoodimagination:green_easter_feather"
+    },
+    {
+      "item": "childhoodimagination:green_easter_feather"
+    },
+    {
+      "item": "childhoodimagination:green_easter_feather"
+    },
+    {
+      "item": "childhoodimagination:green_easter_feather"
+    },
+    {
+      "item": "childhoodimagination:green_easter_feather"
+    }
+  ],
+  "result": {
+    "item": "childhoodimagination:yellow_compressed_easter_block"
+  }
+}

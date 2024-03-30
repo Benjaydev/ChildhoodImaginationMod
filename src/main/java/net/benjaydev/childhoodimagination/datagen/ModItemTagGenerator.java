@@ -1,6 +1,9 @@
 package net.benjaydev.childhoodimagination.datagen;
 
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
+import net.benjaydev.childhoodimagination.block.ModBlocks;
+import net.benjaydev.childhoodimagination.item.ModItems;
+import net.benjaydev.childhoodimagination.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -18,5 +21,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
+        this.tag(ModTags.Items.COMPRESSED_EASTER_BLOCK)
+                .add(ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.RED_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.ORANGE_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.PURPLE_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.BROWN_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.YELLOW_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.GREEN_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.GRAY_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.FIRE_COMPRESSED_EASTER_BLOCK.get().asItem())
+                .add(ModBlocks.VOID_COMPRESSED_EASTER_BLOCK.get().asItem());
     }
 }

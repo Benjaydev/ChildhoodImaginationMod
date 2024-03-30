@@ -54,6 +54,17 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_EASTER_FEATHER = ITEMS.register("void_easter_feather", () -> new Item(new Item.Properties()));
 
 
+    // Armor
+    public static final RegistryObject<Item> BLUE_EASTER_HELMET = ITEMS.register("blue_easter_helmet", () ->
+            new ArmorItem(ModArmorMaterials.BLUE_EASTER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_EASTER_CHESTPLATE = ITEMS.register("blue_easter_chestplate", () ->
+            new ArmorItem(ModArmorMaterials.BLUE_EASTER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_EASTER_LEGGINGS = ITEMS.register("blue_easter_leggings", () ->
+            new ArmorItem(ModArmorMaterials.BLUE_EASTER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_EASTER_BOOTS= ITEMS.register("blue_easter_boots", () ->
+            new ArmorItem(ModArmorMaterials.BLUE_EASTER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

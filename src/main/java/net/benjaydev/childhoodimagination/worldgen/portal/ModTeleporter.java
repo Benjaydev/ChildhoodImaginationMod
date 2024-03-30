@@ -1,7 +1,7 @@
 package net.benjaydev.childhoodimagination.worldgen.portal;
 
 import net.benjaydev.childhoodimagination.block.ModBlocks;
-import net.benjaydev.childhoodimagination.block.custom.ModPortalBlock;
+import net.benjaydev.childhoodimagination.block.custom.EasterPortalBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
@@ -47,7 +47,7 @@ public class ModTeleporter implements ITeleporter {
             boolean doSetBlock = true;
             for (BlockPos checkPos : BlockPos.betweenClosed(destinationPos.below(10).west(10),
                     destinationPos.above(10).east(10))) {
-                if (destinationWorld.getBlockState(checkPos).getBlock() instanceof ModPortalBlock) {
+                if (destinationWorld.getBlockState(checkPos).getBlock() instanceof EasterPortalBlock) {
                     doSetBlock = false;
                     break;
                 }

@@ -1,6 +1,7 @@
 {
   "values": [
     "childhoodimagination:easter_gem_ore",
-    "#forge:ores"
+    "#forge:ores",
+    "childhoodimagination:easter_portal"
   ]
 }

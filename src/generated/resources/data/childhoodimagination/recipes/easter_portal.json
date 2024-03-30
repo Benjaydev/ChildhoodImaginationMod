@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    },
+    {
+      "tag": "childhoodimagination:compressed_easter_block"
+    }
+  ],
+  "result": {
+    "item": "childhoodimagination:easter_portal"
+  }
+}

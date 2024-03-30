@@ -1,7 +1,7 @@
 package net.benjaydev.childhoodimagination.block;
 
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
-import net.benjaydev.childhoodimagination.block.custom.ModPortalBlock;
+import net.benjaydev.childhoodimagination.block.custom.EasterPortalBlock;
 import net.benjaydev.childhoodimagination.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -33,7 +33,29 @@ public class ModBlocks {
                     UniformInt.of(6, 12)));
 
     public static final RegistryObject<Block> EASTER_PORTAL = registerBlock("easter_portal",
-            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable().noOcclusion().noCollission()));
+            () -> new EasterPortalBlock(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)));
+
+    // Compressed easter blocks
+    public static final RegistryObject<Block> BLUE_COMPRESSED_EASTER_BLOCK = registerBlock("blue_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> RED_COMPRESSED_EASTER_BLOCK = registerBlock("red_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> ORANGE_COMPRESSED_EASTER_BLOCK = registerBlock("orange_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> PURPLE_COMPRESSED_EASTER_BLOCK = registerBlock("purple_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> YELLOW_COMPRESSED_EASTER_BLOCK = registerBlock("yellow_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> BROWN_COMPRESSED_EASTER_BLOCK = registerBlock("brown_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> GREEN_COMPRESSED_EASTER_BLOCK = registerBlock("green_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> GRAY_COMPRESSED_EASTER_BLOCK = registerBlock("gray_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> FIRE_COMPRESSED_EASTER_BLOCK = registerBlock("fire_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> VOID_COMPRESSED_EASTER_BLOCK = registerBlock("void_compressed_easter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

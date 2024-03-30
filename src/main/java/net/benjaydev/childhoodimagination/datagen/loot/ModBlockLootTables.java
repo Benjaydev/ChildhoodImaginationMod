@@ -24,6 +24,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.EASTER_GEM_ORE.get(),
                 block -> createOreDrop(ModBlocks.EASTER_GEM_ORE.get(), ModItems.EASTER_GEM.get()));
 
+        this.dropSelf(ModBlocks.EASTER_PORTAL.get());
+        this.dropSelf(ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.RED_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.ORANGE_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.PURPLE_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.BROWN_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.YELLOW_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.GREEN_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.GRAY_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.FIRE_COMPRESSED_EASTER_BLOCK.get());
+        this.dropSelf(ModBlocks.VOID_COMPRESSED_EASTER_BLOCK.get());
+
     }
 
     @Override

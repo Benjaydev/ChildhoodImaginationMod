@@ -19,6 +19,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.EASTER_GEM_ORE);
         blockWithItem(ModBlocks.SCRUE_ORE);
         blockWithItem(ModBlocks.EASTER_PORTAL);
+        blockWithItem(ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.RED_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.ORANGE_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.PURPLE_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.BROWN_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.YELLOW_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.GREEN_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.GRAY_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.FIRE_COMPRESSED_EASTER_BLOCK);
+        blockWithItem(ModBlocks.VOID_COMPRESSED_EASTER_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){
