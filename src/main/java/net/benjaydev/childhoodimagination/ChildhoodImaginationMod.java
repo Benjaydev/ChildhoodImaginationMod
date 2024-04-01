@@ -8,12 +8,18 @@ import net.benjaydev.childhoodimagination.entity.custom.BlueEasterChickenEntity;
 import net.benjaydev.childhoodimagination.entity.custom.YellowEasterChickenEntity;
 import net.benjaydev.childhoodimagination.item.ModCreativeModeTabs;
 import net.benjaydev.childhoodimagination.item.ModItems;
+import net.benjaydev.childhoodimagination.util.ModTags;
 import net.benjaydev.childhoodimagination.worldgen.biome.ModTerrablender;
 import net.benjaydev.childhoodimagination.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -64,6 +70,7 @@ public class ChildhoodImaginationMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -71,6 +78,12 @@ public class ChildhoodImaginationMod
     public void onServerStarting(ServerStartingEvent event)
     {
     }
+
+    @SubscribeEvent
+    public void onPlayerTick(TickEvent.PlayerTickEvent event){
+
+    }
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

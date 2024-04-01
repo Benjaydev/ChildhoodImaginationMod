@@ -1,2 +1,4 @@
-// 1.20.2	2024-03-30T21:10:37.3195055	Tags for minecraft:item mod id childhoodimagination
+// 1.20.2	2024-04-01T21:47:46.3557581	Tags for minecraft:item mod id childhoodimagination
 34e22e0a3ac4831bcf205d6adc38d75a1ea7a971 data/childhoodimagination/tags/items/compressed_easter_block.json
+7483f308e7f40322b8c53dfc15bc9e128eeadec8 data/childhoodimagination/tags/items/easter_armor.json
+cc299835b6b1c0ac2fc237fb5567906a090df98f data/minecraft/tags/items/trimmable_armor.json

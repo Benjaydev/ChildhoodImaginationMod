@@ -12,8 +12,25 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     BLUE_EASTER("blue_easter", 26, new int[]{5,7,5,4}, 25,
-            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK.get()));
-
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.BLUE_COMPRESSED_EASTER_BLOCK.get())),
+    RED_EASTER("red_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.RED_COMPRESSED_EASTER_BLOCK.get())),
+    ORANGE_EASTER("orange_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.ORANGE_COMPRESSED_EASTER_BLOCK.get())),
+    PURPLE_EASTER("purple_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.PURPLE_COMPRESSED_EASTER_BLOCK.get())),
+    BROWN_EASTER("brown_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.BROWN_COMPRESSED_EASTER_BLOCK.get())),
+    YELLOW_EASTER("yellow_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.YELLOW_COMPRESSED_EASTER_BLOCK.get())),
+    GREEN_EASTER("green_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.GREEN_COMPRESSED_EASTER_BLOCK.get())),
+    GRAY_EASTER("gray_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.GRAY_COMPRESSED_EASTER_BLOCK.get())),
+    FIRE_EASTER("fire_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.FIRE_COMPRESSED_EASTER_BLOCK.get())),
+    VOID_EASTER("void_easter", 26, new int[]{5,7,5,4}, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModBlocks.VOID_COMPRESSED_EASTER_BLOCK.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

@@ -19,6 +19,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> COMPRESSED_EASTER_BLOCK = tag("compressed_easter_block");
+        public static final TagKey<Item> EASTER_ARMOR = tag("easter_armor");
 
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(ChildhoodImaginationMod.MODID, name));
