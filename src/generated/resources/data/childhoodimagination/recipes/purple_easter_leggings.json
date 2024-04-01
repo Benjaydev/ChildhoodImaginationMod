@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "childhoodimagination:purple_compressed_easter_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "childhoodimagination:purple_easter_leggings"
+  },
+  "show_notification": true
+}

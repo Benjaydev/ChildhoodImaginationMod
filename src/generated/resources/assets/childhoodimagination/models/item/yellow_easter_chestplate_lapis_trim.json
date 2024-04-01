@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "childhoodimagination:item/yellow_easter_chestplate",
+    "layer1": "minecraft:trims/items/chestplate_trim_lapis"
+  }
+}

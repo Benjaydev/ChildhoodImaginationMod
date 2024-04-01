@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "childhoodimagination:item/fire_easter_helmet",
+    "layer1": "minecraft:trims/items/helmet_trim_redstone"
+  }
+}

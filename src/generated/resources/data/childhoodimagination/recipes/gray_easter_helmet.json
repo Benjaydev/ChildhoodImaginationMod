@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "childhoodimagination:gray_compressed_easter_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "result": {
+    "item": "childhoodimagination:gray_easter_helmet"
+  },
+  "show_notification": true
+}

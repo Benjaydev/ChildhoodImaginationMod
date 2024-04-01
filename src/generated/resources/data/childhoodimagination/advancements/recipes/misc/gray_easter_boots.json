@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gray_compressed_easter_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "childhoodimagination:gray_compressed_easter_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "childhoodimagination:gray_easter_boots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gray_compressed_easter_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "childhoodimagination:gray_easter_boots"
+    ]
+  },
+  "sends_telemetry_event": false
+}
