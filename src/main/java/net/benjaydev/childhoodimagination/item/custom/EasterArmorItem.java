@@ -9,6 +9,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.EnderEyeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
@@ -38,6 +39,11 @@ public class EasterArmorItem extends ArmorItem {
             if(hasFullSuitOfArmorOn(player)) {
                 evaluateArmorEffects(player);
             }
+            else{
+                player.getAbilities().mayfly = false;
+                player.getAbilities().flying = false;
+                player.onUpdateAbilities();
+            }
         }
     }
 
@@ -56,11 +62,6 @@ public class EasterArmorItem extends ArmorItem {
 
         if(hasCorrectArmorOn(ModArmorMaterials.VOID_EASTER, player)){
             player.getAbilities().mayfly = true;
-            player.onUpdateAbilities();
-        }
-        else{
-            player.getAbilities().mayfly = false;
-            player.getAbilities().flying = false;
             player.onUpdateAbilities();
         }
 
