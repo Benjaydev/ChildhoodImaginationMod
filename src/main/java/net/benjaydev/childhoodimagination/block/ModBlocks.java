@@ -2,6 +2,7 @@ package net.benjaydev.childhoodimagination.block;
 
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
 import net.benjaydev.childhoodimagination.block.custom.EasterPortalBlock;
+import net.benjaydev.childhoodimagination.block.custom.ExplosionResistantOre;
 import net.benjaydev.childhoodimagination.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -21,7 +22,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ChildhoodImaginationMod.MODID);
 
     public static final RegistryObject<Block> SCRUE_ORE = registerBlock("scrue_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+            () -> new ExplosionResistantOre(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
                     UniformInt.of(3, 6)));
 
     public static final RegistryObject<Block> EASTER_DUNGEON_BEDROCK = registerBlock("easter_dungeon_bedrock",
@@ -29,7 +30,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> EASTER_GEM_ORE = registerBlock("easter_gem_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+            () -> new ExplosionResistantOre(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
                     UniformInt.of(6, 12)));
 
     public static final RegistryObject<Block> EASTER_PORTAL = registerBlock("easter_portal",

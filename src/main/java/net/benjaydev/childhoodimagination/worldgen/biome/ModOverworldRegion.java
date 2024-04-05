@@ -1,3 +1,4 @@
+/*
 package net.benjaydev.childhoodimagination.worldgen.biome;
 
 import com.mojang.datafixers.util.Pair;
@@ -24,7 +25,7 @@ public class ModOverworldRegion extends Region {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
             //modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, ModBiomes.EASTER_BIOME);
 
-            /*
+
             VanillaParameterOverlayBuilder builder = new VanillaParameterOverlayBuilder();
 
             new ParameterUtils.ParameterPointListBuilder()
@@ -37,9 +38,9 @@ public class ModOverworldRegion extends Region {
                     .build().forEach(point -> builder.add(point, ModBiomes.EASTER_BIOME));
 
             builder.build().forEach(mapper::accept);
-            */
+
 
         });
 
     }
-}
+}*/

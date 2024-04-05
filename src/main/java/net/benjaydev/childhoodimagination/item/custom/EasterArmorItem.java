@@ -13,6 +13,7 @@ import net.minecraft.world.item.EnderEyeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.common.capabilities.Capability;
 
 import java.util.List;
 import java.util.Map;
@@ -39,7 +40,7 @@ public class EasterArmorItem extends ArmorItem {
             if(hasFullSuitOfArmorOn(player)) {
                 evaluateArmorEffects(player);
             }
-            else{
+            else if(!player.isCreative()){
                 player.getAbilities().mayfly = false;
                 player.getAbilities().flying = false;
                 player.onUpdateAbilities();
@@ -60,7 +61,7 @@ public class EasterArmorItem extends ArmorItem {
             }
         }
 
-        if(hasCorrectArmorOn(ModArmorMaterials.VOID_EASTER, player)){
+        if(!player.isCreative() && hasCorrectArmorOn(ModArmorMaterials.VOID_EASTER, player)){
             player.getAbilities().mayfly = true;
             player.onUpdateAbilities();
         }

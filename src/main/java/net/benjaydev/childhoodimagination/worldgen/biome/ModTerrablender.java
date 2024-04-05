@@ -1,4 +1,4 @@
-package net.benjaydev.childhoodimagination.worldgen.biome;
+/* package net.benjaydev.childhoodimagination.worldgen.biome;
 
 import net.benjaydev.childhoodimagination.ChildhoodImaginationMod;
 import net.minecraft.resources.ResourceLocation;
@@ -10,4 +10,4 @@ public class ModTerrablender {
         Regions.register(new ModOverworldRegion(new ResourceLocation(ChildhoodImaginationMod.MODID, "overworld"), 5));
     }
 
-}
+}*/
